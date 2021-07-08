@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .forest{
+            display: flex;
+            /* background-image: url("Image/forest.jpg"); */
+            width: fit-content;
+            /* flex-wrap: wrap; */
+            max-height: 500px ;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+            
+        
+        /* .navbar{
+            width: 200px;
+            border: 1px solid white;
+            margin: 10px;
+            justify-content: center;
+            color: white;
+        } */
+        .first_phrase{
+            text-align: center;
+            line-height: 40px;
+        }
+/* ===================================F E A T U R E S============================================= */
+
+        .feature{
+                
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-image: url("Image/forest.jpg");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
+
+        }
+
+        .feat_head{
+            display: flex;
+            flex-direction: row;
+            width :40%;
+            height: 60px;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 70px;
+
+        }
+
+        .feat_head_left{
+            line-height: 50px;
+            text-align: right;
+            color : white;
+            padding-left: 70%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        .feat_head_right{
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 1px;
+            line-height: 28px;
+            color :whitesmoke;
+            margin-top: 20px;
+            padding-right: 65px;
+        }
+
+        .feature_box{
+            flex-direction: row;
+            width: 285px;
+            height: 371px;
+            margin: 10px;
+            overflow: hidden;
+            background-color: white;
+            padding: 20px;
+            justify-content: space-around;
+            margin-bottom: 50px;
+            padding: 1.5em 1.5em;
+        }
+
+        .feature_head{
+            font-size: 14px;
+            font-weight: 700;
+            color: #a3c962;
+            letter-spacing: 1px;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .feature_price{
+            text-align: center;
+        }
+
+        .feat_currency{
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            line-height: 1.2;
+            font-family: -apple-system, BlinkMacSystemFont, 
+            "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
+            "Helvetica Neue", sans-serif;
+        }
+
+        .feat_price{
+            font-size: 32px;
+            color: #a3c962;
+            font-weight: 600;
+            font-family: -apple-system, BlinkMacSystemFont, 
+            "Segoe UI", Roboto,
+            Oxygen-Sans, Ubuntu, Cantarell, 
+            "Helvetica Neue", sans-serif;
+        }
+
+        .feature_content{
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 2.5;
+            color: rgb(150,150,150);
+            list-style-type: none;
+            letter-spacing: 1px;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            margin : 20px;
+
+        }
+
+
+        .feature_button{
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        button{
+            background-color: #a3c962;
+            color: whitesmoke;
+            font-size: 14px;
+            padding: 7px 17px;
+            border-radius: 19px;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            border-radius: 20px;
+            border :2px solid white;
+            cursor: pointer;
+
+        }
+
+        button:hover{
+            transition: 0.8s;
+            background-color: black;
+            color: white;
+        }
+
+/* ===================================  C  L  I  E  N  T  ============================================= */
+
+        .client{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 5px;
+        }
+
+        .client_head{
+            display: flex;
+            flex-direction: row;
+            width :40%;
+            height: 60px;
+            margin-top: 30px;
+            margin-bottom: 70px;
+        
+        }
+
+        .client_head_left{
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 1px;
+            line-height: 28px;
+            margin-top: 20px;
+            padding-left: 65px;
+            text-align: right;
+  
+        }
+
+        .client_head_right{  
+            
+            line-height: 50px;
+            padding-right: 0%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align : left;  
+        }
+
+        .client_img{
+            width: 150px;
+            height: 150px;
+            border : 1px solid #dee2e6;
+            border-radius: .25rem;
+            padding: 0.25rem;
+
+        }
+
+        .client_box{
+
+        }
+
+
+/* ===================================  B  L  O  G  ============================================= */
+
+        .blog{
+        
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-image: url("Image/blogbackground.jpg");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+    
+        }
+
+        .blog_heading{
+            display: flex;
+            flex-direction: row;
+            width :40%;
+            height: 60px;
+
+            margin-top: 30px;
+            margin-bottom: 70px;
+        }
+
+        .blog_header_left{
+
+            line-height: 50px;
+            text-align: right;
+            color : white;
+            padding-left: 70%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .blog_header_right{
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 1px;
+            line-height: 28px;
+            color :whitesmoke;
+            margin-top: 20px;
+            padding-right: 65px;
+            text-align: left;
+        }
+        
+
+        .blog_box{
+            flex-direction: row;
+            width: 350px;
+            height: 500px;
+            margin: 10px;
+            overflow: hidden;
+            background-color: white;
+            padding: 20px;
+            justify-content: space-around;
+            margin-bottom: 50px;
+            
+        }
+
+        .blog_content{
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 1px;
+            line-height: 28px;
+        }
+
+
+        .blog_date_tag{
+            display: flex;
+            justify-content: flex-start;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 1px;
+            line-height: 90px;
+           
+        }
+ /* ===================================   M    A    P   ============================================= */
+
+        .map{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: 1px solid whitesmoke;
+        }
+
+
+
+/* ===================================F  0  0  T  E  R============================================= */
+
+        .last{
+            display: flex;
+            background-color: rgb(163,201,98);
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 200px;
+            padding-top: 40px;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            letter-spacing: 3px;
+        }
+        .icon{
+            display: flex;
+            flex-wrap: wrap;  
+            padding-top: 30px;   
+            width: 200px;
+            justify-content: space-between;
+            margin-left: 200px;
+            cursor: pointer;
+        }
+        .arrow{
+            padding-left: 10px;
+        }
+
+
+   
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f O R E S t</title>
+    <script src="https://kit.fontawesome.com/733a8eee7b.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Image/brownlogo.png" />
+</head>
+<body>
+
+    <div class="forest">
+        <!-- <img src="Image/forest.jpg" width=100%> -->
+        <!-- <div class="navbar">
+            <ul>
+                <li><h3>FOREST</h3></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div> -->
+    </div>
+
+    <div class="About">
+        <div class="first_phrase">
+            <h3 style="color: lime;">What we do</h3>
+            <h2>STANDING TOGETHER FOR A BETTER WORLD</h2><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>
+                Lorem ipsum dolor sit amet, consectetur 
+            </p>
+        </div>
+    </div>
+
+<!--  ===============================  F   E  A  T  U  R  E ==================== -->
+    <div class="feature">
+
+        <div class="feat_head">
+            <div class="feat_head_left">
+                <p style="color:rgb(163,201,98);font-size:19px;letter-spacing: 1px;"><b>Our Plans</b></p>
+               <h1 style="font-size: 33px;letter-spacing: 2px; font-weight: lighter; ">Our Prices</h1> 
+            </div>
+        </div>
+        
+        <div class="feat_head">
+            <div class="feat_head_right">
+                <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p style="text-align: left;">eiusmod tempor incididunt ut labore</p> 
+            </div>
+        </div>
+
+        <div class="feature_box">
+            <div class="feature_head">
+                <h1>GOLDEN</h1>
+            </div>
+
+            <div class="feature_price">
+                <h4 style="font-size: 16px;
+                letter-spacing: 1px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 500;
+                line-height: 1.2;" >
+                    <span class="feat_currency">$</span>
+                    <span class="feat_price">50</span>
+                    /month
+                </h4>
+            </div>
+
+            <ul class="feature_content">
+                <li>Lorem ipsum</li>  
+                <li>Dolor sit</li>
+                <li>Consectetuer</li>
+                <li>Adipiscing</li>
+                <li>Lorem ipsum</li>              
+            </ul>
+
+            <div class="feature_button">
+                <button type="button" > Book Now</button>
+            </div>
+        </div>
+
+        <div class="feature_box">
+            <div class="feature_head">
+                <h1>PREMIUM</h1>
+            </div>
+
+            <div class="feature_price">
+                <h4 style="font-size: 16px;
+                letter-spacing: 1px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 500;
+                line-height: 1.2;"
+                >
+                    <span class="feat_currency">$</span>
+                    <span class="feat_price">60</span>
+                    /month
+                </h4>
+            </div>
+
+            <ul class="feature_content">
+                <li>Lorem ipsum</li>  
+                <li>Dolor sit</li>
+                <li>Consectetuer</li>
+                <li>Adipiscing</li>
+                <li>Lorem ipsum</li>                
+            </ul>
+
+            <div class="feature_button">
+                <button type="button" >Book Now</subscribe></button>
+            </div>
+        </div>
+
+        <div class="feature_box">
+
+            <div class="feature_head">
+                <h1>PLATINUM</h1>
+            </div>
+
+            <div class="feature_price">
+                <h4 style="font-size: 16px;
+                letter-spacing: 1px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 500;
+                line-height: 1.2;"
+                >
+                    <span class="feat_currency">$</span>
+                    <span class="feat_price">70</span>
+                    /month
+                </h4>
+            </div>
+
+            <ul class="feature_content">
+                
+
+                <li>Lorem ipsum</li>  
+                <li>Dolor sit</li>
+                <li>Consectetuer</li>
+                <li>Adipiscing</li>
+                <li>Lorem ipsum</li>
+            </ul>
+
+            <div class="feature_button">
+                <button type="button">Book Now</subscribe>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="feature_box">
+
+            <div class="feature_head">
+                <h1>SILVER</h1>
+            </div>
+
+            <div class="feature_price">
+                <h4 style="font-size: 16px;
+                letter-spacing: 1px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 500;
+                line-height: 1.2;"
+                >
+                    <span class="feat_currency">$</span>
+                    <span class="feat_price">80</span>
+                    /month
+                </h4>
+            </div>
+
+            <ul class="feature_content">
+                <li>Lorem ipsum</li>  
+                <li>Dolor sit</li>
+                <li>Consectetuer</li>
+                <li>Adipiscing</li>
+                <li>Lorem ipsum</li>   
+            </ul>
+
+            <div class="feature_button">
+                <button type="button" >Book Now</subscribe></button>
+            </div>
+        </div>
+    </div>
+
+    <!--  ===================================  C  L  I  E  N  T  S  =============================================  -->
+
+    <div class="client" id="client">
+
+        <div class="client_head">
+            <div class="client_head_left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p>eiusmod tempor incididunt ut labore</p>
+            </div>
+        </div>
+
+        <div class="client_head">
+            <div class="client_head_right">
+                <p style="color:rgb(163,201,98);font-size:19px;letter-spacing: 1px;">What Say peoples</p>
+                <h1 style="font-size: 33px;letter-spacing: 2px;font-weight: lighter;">Our Clients</h1>
+            </div>
+        </div>
+
+        <div class="client_box">
+            <div class="client_img">
+                <img src="Image/Client/lostkid.jpg">
+
+            </div>
+
+            <div class="client_content">
+                <h3>Ted Willson</h3>
+                <h6>Our Client</h6>
+                <p>Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore</p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!--  ===================================  B  L  O  G  =============================================  -->
+
+    <div class="blog">
+
+        <div class="blog_heading">
+            <div class="blog_header_left">
+                <p style="color:rgb(163,201,98);font-size:19px;letter-spacing: 1px;"><b>See our Events</b></p>
+               <h1 style="font-size: 33px;letter-spacing: 2px;font-weight: lighter;">Our Blog</h1> 
+            </div>
+        </div>
+        
+        <div class="blog_heading">
+            <div class="blog_header_right">
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p >eiusmod tempor incididunt ut labore</p> 
+            </div>
+        </div>
+
+        <br>
+
+        <div class="blog_box">
+            <div class="blog_image">
+                <img src="Image/butterflyhand.jpg" width="100%">
+            </div>
+
+            <div class="blog_content">
+                <p>Blog</p>
+                <h2 style="color: rgb(163,201,98);">Quisque a rhoncus</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+
+                </p>
+            </div>
+            <div class="blog_date_tag">
+                <p>12/4/2019</p>
+                <p style="padding-left: 170px;"> 3 Tags</p>
+
+            </div>
+
+        </div>
+        <div class="blog_box">
+            <div class="blog_image">
+                <img src="Image/smallforest.jpg" width="100%">
+            </div>
+
+            <div class="blog_content">
+                <p>Blog</p>
+                <h2 style="color: rgb(163,201,98);">Quisque a rhoncus</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+
+                </p>
+            </div>
+            <div class="blog_date_tag">
+                <p>12/4/2019</p>
+                <p style="padding-left: 170px;"> 3 Tags</p>
+
+            </div>
+
+        </div>
+        <div class="blog_box">
+            <div class="blog_image">
+                <img src="Image/redflowerlady.jpg" width="100%">
+            </div>
+
+            <div class="blog_content">
+                <p>Blog</p>
+                <h2 style="color: rgb(163,201,98);">Quisque a rhoncus</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+
+                </p>
+            </div>
+            <div class="blog_date_tag">
+                <p>12/4/2019</p>
+                <p style="padding-left: 170px;"> 3 Tags</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="Service">
+        <img src="Image/greenland.jpg" width="100%">
+        
+
+    </div> -->
+ <!--  ===================================   M     A      P   =============================================  -->
+
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14159.258623820042!2d153.016698!3d-27.475029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a0835840a2f%3A0xdd5e3f5c208dc0e1!2sMelbourne%20St%2C%20South%20Brisbane%20QLD%204101%2C%20Australia!5e0!3m2!1sen!2sin!4v1624878388396!5m2!1sen!2sin" 
+        width="100%" height="300px" style="border:3px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+<!--  ===================================   F   O   O   T   E   R    =============================================  -->
+    <div class="last">
+        <div class="footer">
+            <p>© 2018 Forest. All Rights Reserved | Design by W3Layouts</p>
+            <div class="icon">
+                <div class="facebook_logo">
+                    <img src="https://img.icons8.com/ios-glyphs/40/000000/facebook-circled--v1.png"/>
+                </div>
+                <div class="twitter_logo">
+                    <img src="https://img.icons8.com/ios-glyphs/40/000000/twitter-circled--v1.png"/>
+                </div>
+                <div class="rss_logo">
+                    <img src="Image/icon-rss.png" width="40px">
+                </div>
+                <div class="vk_logo">
+                    <img src="https://img.icons8.com/ios-glyphs/40/000000/vk-circled.png"/>
+                    </div>
+                </div>
+            <br>
+                <div class="arrow" style="text-align: center;">
+                    <img src="https://img.icons8.com/material-rounded/40/000000/circled-chevron-up.png"/>
+                </div>
+        </div>
+
+    </div>
+</body>
+</html>
